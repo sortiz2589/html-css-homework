@@ -25,19 +25,9 @@ h1 {
   margin: 12px 0 2px;
   font-size: 2.2rem;
 }
-nav {
-  text-align: center;
-  padding: 15px;
-}
-nav a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: underline;
-  margin: 0 10px;
-  display: inline-block;
-}
+nav a,
 footer a {
-  color: #ffffff;
+  color: #d5c6ff;
   font-weight: bold;
 }
 main {
