@@ -3,160 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spider-Man Character Profile</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #eef1f5;
-        color: #20232a;
-        line-height: 1.6;
-      }
-      header {
-        background-color: #b5121b;
-        color: white;
-        text-align: center;
-        padding: 35px 20px;
-      }
-      .profile-picture {
-        width: 145px;
-        height: 145px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 5px solid white;
-      }
-      header h1 {
-        margin: 12px 0 0;
-        font-size: 2.2rem;
-      }
-      header p {
-        margin: 4px 0 0;
-      }
-      main {
-        width: min(900px, 92%);
-        margin: 28px auto;
-      }
-      section {
-        background: white;
-        padding: 22px;
-        margin-bottom: 22px;
-        border-radius: 12px;
-        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-      }
-      h2 {
-        color: #b5121b;
-        border-bottom: 2px solid #e7b7ba;
-        padding-bottom: 7px;
-        margin-top: 0;
-      }
-      .about-image {
-        display: block;
-        width: 100%;
-        max-height: 300px;
-        object-fit: cover;
-        border-radius: 8px;
-        margin-top: 15px;
-      }
-      .caption {
-        font-size: 0.9rem;
-        color: #60646c;
-        margin-top: 6px;
-      }
-      ul {
-        padding-left: 24px;
-      }
-      li {
-        margin-bottom: 6px;
-      }
-      a {
-        color: #b5121b;
-      }
-      header .character-nav a {
-        color: white;
-        font-weight: bold;
-        text-decoration: underline;
-        margin: 0 10px;
-      }
-      footer a {
-        color: #ffd8da;
-        margin: 0 8px;
-      }
-      @media (max-width: 600px) {
-        header h1 {
-          font-size: 1.8rem;
-        }
-        section {
-          padding: 17px;
-        }
-      }
-    </style>
+    <title>FC Barcelona - More Than a Club</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <header>
+    <!-- HERO BANNER -->
+    <div class="hero-banner">
+      <div class="wrapper">
+        <h1>FC Barcelona</h1>
+        <h3>Més que un club. More than a club.</h3>
+        <a href="#more-info" class="cta">Discover Barça</a>
+      </div>
+
       <img
-        class="profile-picture"
-        src="https://hips.hearstapps.com/hmg-prod/images/msm2-reveal-attack-4k-legal-65284680c18ba.jpg?crop=0.490xw:0.872xh;0.115xw,0&resize=1200:*"
-        alt="Comic-inspired red and blue superhero artwork"
+        src="images/barcelona-crest.png"
+        class="hero-image"
+        alt="FC Barcelona crest"
       />
-      <h1>Spider-Man</h1>
-      <p>Friendly Neighborhood Superhero</p>
-      <nav class="character-nav">
-        <a href="your%20practice%20website.html">Spider-Man</a> ·
-        <a href="miles-morales.html">Miles Morales</a>
-      </nav>
-    </header>
+    </div>
 
-    <main>
-      <section id="about">
-        <h2>About</h2>
+    <!-- STICKY NAVIGATION -->
+    <nav class="main-nav">
+      <div class="wrapper">
+        <ul>
+          <li><a href="#more-info">More Info</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#" class="popup-button">Join the Barça Community</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MORE INFO SECTION -->
+    <div class="more-info" id="more-info">
+      <div class="wrapper">
+        <h2>Welcome to <span>FC Barcelona</span></h2>
+
         <p>
-          Spider-Man is the superhero identity of Peter Parker. He is known for
-          helping people, protecting his neighborhood, and trying to do the
-          right thing even when life gets complicated. His story shows that
-          being a hero is about more than having powers.
+          FC Barcelona is one of the most recognized football clubs in the
+          world. Founded in 1899, the club represents more than football. Its
+          history, supporters, and style of play have made it an important part
+          of the sport.
         </p>
-        <img
-          class="about-image"
-          src="https://media.vanityfair.com/photos/5d5dacc363a3160008e3a190/master/pass/spiderman-marvel.jpg"
-          alt="Colorful city lights at night"
-        />
-        <p class="caption">
-          The city is where Spider-Man looks out for his community.
+
+        <p>
+          From the energy of the supporters to the traditions of the club,
+          Barcelona continues to inspire generations of football fans around the
+          world.
         </p>
-      </section>
 
-      <section id="characteristics">
-        <h2>Characteristics</h2>
-        <ul>
-          <li>Brave when others need help</li>
-          <li>Creative and quick-thinking</li>
-          <li>Funny, even in stressful moments</li>
-          <li>Loyal to friends and family</li>
-          <li>Responsible for how he uses his abilities</li>
+        <a href="#story" class="read-more">Read More</a>
+      </div>
+    </div>
+
+    <!-- STORY SECTION -->
+    <div class="story" id="story">
+      <div class="wrapper">
+        <h2>The Story of Barça</h2>
+
+        <ul class="story-list">
+          <li>
+            <span>1899</span>
+            <h3>The Beginning</h3>
+            <p>
+              FC Barcelona was founded by Joan Gamper and a group of football
+              enthusiasts.
+            </p>
+          </li>
+
+          <li>
+            <span>Camp Nou</span>
+            <h3>A Home for Supporters</h3>
+            <p>
+              The club's stadium has become a famous place for football and
+              unforgettable moments.
+            </p>
+          </li>
+
+          <li>
+            <span>La Masia</span>
+            <h3>Developing Talent</h3>
+            <p>
+              Barcelona's academy is known for developing talented players and
+              promoting its football philosophy.
+            </p>
+          </li>
+
+          <li>
+            <span>Today</span>
+            <h3>A Global Club</h3>
+            <p>
+              Barcelona continues to compete and connect with supporters around
+              the world.
+            </p>
+          </li>
         </ul>
-      </section>
+      </div>
+    </div>
 
-      <section id="friends">
-        <h2>Friends</h2>
-        <ul>
-          <li>Mary Jane Watson</li>
-          <li>Gwen Stacy</li>
-          <li>Ned Leeds</li>
-          <li>Aunt May</li>
-        </ul>
-      </section>
-    </main>
-
+    <!-- FOOTER -->
     <footer>
-      <p>Thanks for visiting my character profile!</p>
-      <p>
-        <a href="#about">About</a>
-        <a href="#characteristics">Characteristics</a>
-        <a href="#friends">Friends</a>
-      </p>
+      <div class="wrapper">
+        <p>FC Barcelona | Més que un club</p>
+        <p>More than a club. A passion shared around the world.</p>
+      </div>
     </footer>
+
+    <!-- POPUP -->
+    <div class="popup">
+      <div class="popup-content">
+        <h2>Join the Barça Community</h2>
+        <p>Celebrate the history, football, and spirit of FC Barcelona.</p>
+        <a href="#" class="close-popup">Close</a>
+      </div>
+    </div>
   </body>
 </html>
