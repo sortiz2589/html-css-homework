@@ -235,3 +235,46 @@ footer {
     width: 100%;
   }
 }
+/* SEPARATOR */
+
+.separator {
+  width: 470px;
+  max-width: 90%;
+  height: 10px;
+  background: #a50044;
+  margin: 60px auto;
+}
+
+/* STORY IMAGE */
+
+.story-image {
+  width: 180px;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
+
+/* STORY LIST */
+
+.story-list li {
+  min-height: 70px;
+  transition: opacity 0.3s ease;
+}
+
+.story-list li:hover {
+  opacity: 0.7;
+}
+
+/* FOOTER BUTTON */
+
+footer .cta {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .separator {
+    width: 90%;
+  }
+}
