@@ -117,5 +117,28 @@
         <a href="#" class="close-popup">Close</a>
       </div>
     </div>
+
+    <!-- JAVASCRIPT FOR POPUP -->
+    <script>
+      const popup = document.querySelector(".popup");
+      const popupButton = document.querySelector(".popup-button");
+      const closePopup = document.querySelector(".close-popup");
+
+      popupButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        popup.style.display = "flex";
+      });
+
+      closePopup.addEventListener("click", function (event) {
+        event.preventDefault();
+        popup.style.display = "none";
+      });
+
+      popup.addEventListener("click", function (event) {
+        if (event.target === popup) {
+          popup.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
